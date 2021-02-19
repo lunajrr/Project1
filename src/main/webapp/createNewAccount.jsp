@@ -68,8 +68,8 @@
             </form>
             </div>
             <br>
-            <form action="customer.jsp">
-    		<button>Go Back</button>
+            <form >
+    		<button onclick="history.back()">Go Back</button>
 </form>
 
             </div>  

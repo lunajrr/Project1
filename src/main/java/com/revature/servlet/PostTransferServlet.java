@@ -31,22 +31,24 @@ public class PostTransferServlet extends HttpServlet {
 		
 		Log4J2.info("Tried to post a transfer");
 		TransferDAOIMP tranDAO = new TransferDAOIMP();
+		
 		try {
 			String sendAcc = request.getParameter("sendAccNumber");
 			String recAcc = request.getParameter("recAccNumber");
 			double amount = Double.parseDouble(request.getParameter("amount"));
+			request.getSession().setAttribute("accNumber", sendAcc);
 			if(tranDAO.startTransfer(sendAcc, recAcc, amount)) {
-				request.getSession().setAttribute("error", null);
-				request.getRequestDispatcher("CustomerViewAccountDetails").forward(request, response);
+				request.getSession().setAttribute("error",null);
+				request.getRequestDispatcher("customerViewAccountDetails").forward(request, response);
 			}
 			else {
 				request.getSession().setAttribute("error", "Cannot post transfer");
-				request.getRequestDispatcher("CustomerViewAccountDetails").forward(request, response);
+				request.getRequestDispatcher("customerViewAccountDetails").forward(request, response);
 			}
 				
 			}catch(Exception e) {
 				request.getSession().setAttribute("error", "Cannot post transfer");
-					request.getRequestDispatcher("CustomerViewAccountDetails").forward(request, response);
+					request.getRequestDispatcher("customerViewAccountDetails").forward(request, response);
 			}
 		
 	}

@@ -80,7 +80,8 @@
     
     <div id="middleColor"> 
     <div id="header"></div>
-    <h1>All of the Transactions </h1>
+    <h1>All of the Transactions             
+</h1>
             <div id="page-container">
             
             <div id="content-wrap">

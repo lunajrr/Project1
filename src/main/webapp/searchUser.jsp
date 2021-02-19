@@ -57,7 +57,7 @@
             
             #accountList{
             position:absolute;
-            top:50px;
+            top:60px;
         
             left:0px;
             }
@@ -90,7 +90,6 @@
             <input type="text" value="Enter Username"name="username" required/>
             <input type="submit" value="Search"/>
             </form>
-            
 			<article id="accountList">
                                 <h1><c:out value="Accounts owned by: ${searchedUser}"></c:out></h1>
                 <table class="table">

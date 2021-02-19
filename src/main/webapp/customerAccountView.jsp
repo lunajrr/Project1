@@ -10,7 +10,6 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-
         <link rel= "stylesheet" href="default.css"/>
 
         <style>  
@@ -59,6 +58,7 @@
     <h3>Balance: ${account.balance}</h3>
     <h3>Account Type: ${account.acc_type}</h3>
     <h3>State:   ${account.state}</h3>
+    <div id="inputssss">
                 <form method="POST">
                 <label for="amount">Withdraw Amount</label>
                 <input type="hidden" name="accNumber" value="${account.number}"/>
@@ -83,6 +83,8 @@
             <input type="number" name="amount" min="0.01" step=".01" max="${account.balance}" required/>
             <input type="submit" value="Post Transfer"/>
             </form>
+            
+            </div>
     </article>
             
             <div id="content-wrap">

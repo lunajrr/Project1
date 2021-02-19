@@ -50,8 +50,8 @@
             
             
             <div id="content-wrap">
-            
-            <div class="table" style="height:800px;overflow-y: scroll;">
+            <div class="table" style="height:
+            750px;overflow-y: scroll;">
                 <table>
                 	<thead>
                 	<tr>

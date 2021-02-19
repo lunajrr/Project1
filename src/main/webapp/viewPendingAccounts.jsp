@@ -22,10 +22,10 @@
             article{
             border:3px solid black;
             position:absolute;
-            top:0px;
+            top:50px;
             left:0px;
             width:100%;
-            height:600px;
+            height:550px;
             overflow-y: scroll;
             background-color: rgb(136, 189, 160);}
             table{
@@ -63,7 +63,7 @@
     <div id="header"></div>
             <div id="page-container">
             <div id="content-wrap">
-               <h1><c:out value="${success}"></c:out></h1>
+            <h1><c:out value="${success}"></c:out></h1>
                 <article id="accTable">
               
                 <table class="table table-striped table-hover table-responsive">

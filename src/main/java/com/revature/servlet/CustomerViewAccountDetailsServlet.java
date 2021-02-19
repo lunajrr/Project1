@@ -42,6 +42,8 @@ public class CustomerViewAccountDetailsServlet extends HttpServlet {
 		TransactionDAOIMP tranDAO = new TransactionDAOIMP();
 		TransferDAOIMP transferDAO = new TransferDAOIMP();
 		String accNumber = request.getParameter("accNumber");
+		if(accNumber == null)
+			accNumber =(String) request.getSession().getAttribute("accNumber");
 		Account acc = accDAO.getAccountByAccNumber(accNumber);
 		List<Transactions> tranList = tranDAO.getTransactionByAccountNumber(accNumber);
 		List<Transfer> transferList = transferDAO.seeAllTransfer(accNumber);
