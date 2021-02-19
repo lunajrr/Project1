@@ -22,14 +22,18 @@ To-do list:
 
 Getting Started
 
-(include git clone command) (include all environment setup steps)
+    Install Tomcat Server at http://tomcat.apache.org/
+    
+    Clone Command:
+    git clone https://github.com/lunajrr/Project1
+    
 
-    Be sure to include BOTH Windows and Unix command
-    Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
-
-    All the code required to get started
-    Images of what it should look like
 
 Usage
 
-    Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+    Once downloaded:
+        Import into Eclipse or an ide.
+        Configure Tomcat Server in eclipse.
+        Right-Click the project and select run on server.
+        You will be able to access the files through using localhost.
+        
